@@ -7,7 +7,7 @@ import sdk from "./1-initialize-sdk.js";
       name: "Good Vibes Ohmly",
 
       // This is the location of our governance token, our ERC-20 contract!
-      voting_token_address: "INSERT_TOKEN_ADDRESS",
+      voting_token_address: "0xbE23C9EC4A95B32142a23CFc8e4e71C0415E1dA5",
 
       // These parameters are specified in number of blocks. 
       // Assuming block time of around 13.14 seconds (for Ethereum)
@@ -18,16 +18,16 @@ import sdk from "./1-initialize-sdk.js";
 
       // How long do members have to vote on a proposal when it's created?
       // we will set it to 1 day = 6570 blocks (3day = 19710)
-      voting_period_in_blocks: 19710,
+      voting_period_in_blocks: 6570,
 
       // The minimum % of the total supply that need to vote for
       // the proposal to be valid after the time for the proposal has ended.
-      voting_quorum_fraction: 33,
+      voting_quorum_fraction: 10,
 
       // What's the minimum # of tokens a user needs to be allowed to create a proposal?
       // I set it to 0. Meaning no tokens are required for a user to be allowed to
       // create a proposal.
-      proposal_token_threshold: 10000,
+      proposal_token_threshold: 1000,
     });
 
     console.log(
